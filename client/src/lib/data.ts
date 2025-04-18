@@ -63,36 +63,47 @@ export const skillCategories: SkillCategory[] = [
 // Projects
 export const projects: Project[] = [
   {
-    id: "payroll",
-    title: "Payroll Automation System",
-    description: "Automated payroll processing system that extracts data from multiple sources, validates information, and generates reports.",
-    categories: ["automation", "python"],
+    id: "orion_token",
+    title: "OrionToken",
+    description: "A next-generation asset tokenization platform that enables businesses to tokenize, manage, and trade real-world assets (e.g., real estate, invoices, equipment) on public blockchains like Ethereum and Polygon.",
+    categories: ["blockchain", "fintech", "web3"],
     year: "2023",
-    image: "/payroll-automation.jpg",
-    techStack: ["Python, Pandas, PyPDF2", "AWS Lambda, S3", "Custom ETL Pipeline"],
-    githubUrl: "#",
+    image: "/orion-token.jpg", // Placeholder - you'll add the actual image
+    techStack: ["Ethereum/Solidity", "Next.js", "Polygon", "Smart Contracts"],
+    githubUrl: "https://github.com/Evan620/OrionToken",
     demoUrl: "#"
   },
   {
-    id: "ai_analyzer",
-    title: "AI Content Analyzer",
-    description: "Content analysis tool that leverages GPT-4 to evaluate, summarize, and generate insights from large document collections.",
-    categories: ["ai", "nlp"],
+    id: "oriontech",
+    title: "oriontech.co.ke",
+    description: "A modern, AI-powered website for Orion, a Nairobi-based technology consultancy, showcasing services, portfolio projects, and featuring an intelligent OpenAI-driven chatbot for client interactions.",
+    categories: ["web", "ai", "consultancy"],
     year: "2023",
-    image: "/ai-analyzer.jpg",
-    techStack: ["OpenAI GPT-4 API", "Next.js, React", "Vector Database (Pinecone)"],
-    githubUrl: "#",
+    image: "/oriontech.jpg", // Placeholder - you'll add the actual image
+    techStack: ["React", "OpenAI API", "TailwindCSS", "Node.js"],
+    githubUrl: "https://github.com/Evan620/oriontech.co.ke",
+    demoUrl: "https://oriontech.co.ke"
+  },
+  {
+    id: "rez_guru_ai",
+    title: "RezGuruAI",
+    description: "A real estate automation platform combining AI-driven analytics, lead management, document generation, and customizable workflow automation to streamline property operations and market intelligence.",
+    categories: ["real-estate", "ai", "automation"],
+    year: "2023",
+    image: "/rezguru.jpg", // Placeholder - you'll add the actual image
+    techStack: ["Python", "ML/Analytics", "Document AI", "Cloud Infrastructure"],
+    githubUrl: "https://github.com/Evan620/RezGuruAI",
     demoUrl: "#"
   },
   {
-    id: "cloud_infra",
-    title: "Cloud Infrastructure Automation",
-    description: "Infrastructure as Code framework for deploying scalable, self-healing cloud architectures with integrated monitoring.",
-    categories: ["cloud", "devops"],
-    year: "2022",
-    image: "/cloud-infra.jpg",
-    techStack: ["Terraform, AWS CDK", "AWS (ECS, Lambda, SQS)", "Python, NodeJS"],
-    githubUrl: "#",
+    id: "job_genius_ai",
+    title: "JobGeniusAI",
+    description: "An AI-powered job application assistant that optimizes resumes, matches you to relevant openings, tracks applications, and analyzes skill gaps—integrating OAuth sign-ins with GitHub or LinkedIn.",
+    categories: ["career", "ai", "productivity"],
+    year: "2023",
+    image: "/job-genius.jpg", // Placeholder - you'll add the actual image
+    techStack: ["React", "OpenAI API", "OAuth", "Node.js/Express"],
+    githubUrl: "https://github.com/Evan620/JobGeniusAI",
     demoUrl: "#"
   }
 ];

@@ -52,16 +52,6 @@ const ProjectFilter = ({ onFilterChange, onSearch }: ProjectFilterProps) => {
           </button>
           <button
             className={`${
-              activeFilter === "automation"
-                ? "bg-cyber-magenta/20"
-                : "bg-black/60 hover:bg-cyber-magenta/30"
-            } border border-cyber-magenta/50 text-cyber-magenta px-4 py-2 rounded-md transition-colors`}
-            onClick={() => handleFilterClick("automation")}
-          >
-            Automation
-          </button>
-          <button
-            className={`${
               activeFilter === "ai"
                 ? "bg-cyber-magenta/20"
                 : "bg-black/60 hover:bg-cyber-magenta/30"
@@ -69,6 +59,36 @@ const ProjectFilter = ({ onFilterChange, onSearch }: ProjectFilterProps) => {
             onClick={() => handleFilterClick("ai")}
           >
             AI
+          </button>
+          <button
+            className={`${
+              activeFilter === "blockchain"
+                ? "bg-cyber-magenta/20"
+                : "bg-black/60 hover:bg-cyber-magenta/30"
+            } border border-cyber-magenta/50 text-cyber-magenta px-4 py-2 rounded-md transition-colors`}
+            onClick={() => handleFilterClick("blockchain")}
+          >
+            Blockchain
+          </button>
+          <button
+            className={`${
+              activeFilter === "web"
+                ? "bg-cyber-magenta/20"
+                : "bg-black/60 hover:bg-cyber-magenta/30"
+            } border border-cyber-magenta/50 text-cyber-magenta px-4 py-2 rounded-md transition-colors`}
+            onClick={() => handleFilterClick("web")}
+          >
+            Web
+          </button>
+          <button
+            className={`${
+              activeFilter === "real-estate"
+                ? "bg-cyber-magenta/20"
+                : "bg-black/60 hover:bg-cyber-magenta/30"
+            } border border-cyber-magenta/50 text-cyber-magenta px-4 py-2 rounded-md transition-colors`}
+            onClick={() => handleFilterClick("real-estate")}
+          >
+            Real Estate
           </button>
         </div>
       </div>

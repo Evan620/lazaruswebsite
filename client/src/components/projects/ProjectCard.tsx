@@ -35,7 +35,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  <i className="fas fa-code-branch mr-1"></i> GitHub
+                  <i className="fab fa-github mr-1"></i> GitHub
                 </a>
               )}
               {project.demoUrl && (
@@ -59,8 +59,14 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
               <span 
                 key={index} 
                 className={`${
-                  category === 'ai' || category === 'nlp' 
+                  category === 'ai' || category === 'productivity' 
                     ? 'bg-cyber-magenta/20 text-cyber-magenta' 
+                    : category === 'blockchain' || category === 'fintech' || category === 'web3'
+                    ? 'bg-[#9945FF]/20 text-[#9945FF]'
+                    : category === 'web' || category === 'consultancy'
+                    ? 'bg-[#14F195]/20 text-[#14F195]'
+                    : category === 'real-estate' || category === 'career'
+                    ? 'bg-[#F5A623]/20 text-[#F5A623]'
                     : 'bg-cyber-teal/20 text-cyber-teal'
                 } text-xs px-2 py-1 rounded`}
               >
