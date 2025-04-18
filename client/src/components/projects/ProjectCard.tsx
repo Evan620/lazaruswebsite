@@ -13,8 +13,12 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       <div className="project-thumbnail h-52 relative">
         <div className="project-thumbnail-inner w-full h-full absolute">
           <div className="project-front absolute inset-0">
-            {/* We'll use a gradient background instead of an actual image to avoid binary files */}
-            <div className="w-full h-full bg-gradient-to-br from-cyber-dark via-black to-cyber-dark/80"></div>
+            {/* Project image */}
+            <img 
+              src={project.image} 
+              alt={project.title}
+              className="w-full h-full object-cover"
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
             <div className="absolute bottom-0 left-0 right-0 p-4">
               <h3 className="font-space text-lg text-white">{project.title}</h3>
