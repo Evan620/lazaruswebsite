@@ -882,7 +882,8 @@ const SkillGraph = () => {
                             }
                           }}
                         >
-                          {relatedSkill?.discovered ? relatedSkillName : '???'}
+                          {/* Always show the skill name, but make it clear if it's not discovered */}
+                          {relatedSkillName} {!relatedSkill?.discovered && <span className="text-cyber-magenta text-xs ml-1">[undiscovered]</span>}
                         </div>
                       );
                     })
