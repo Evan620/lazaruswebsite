@@ -1,0 +1,122 @@
+Concept: "The Neural Interface"
+A futuristic terminal-inspired portfolio with AI-personalized content and 3D visuals.
+
+Key Features
+Holographic Terminal Interface
+
+Hero Section: A Matrix-style terminal where visitors "hack" into your portfolio by typing access Lazarus_portfolio --verify (fake CLI interaction).
+
+AI Greeter: A custom GPT-3.5 avatar (your face stylized as a hologram) welcomes users and explains navigation.
+
+Interactive 3D Skill Web
+
+Tech Stack Visualization: A dynamic 3D graph (Three.js) showing connections between your skills:
+
+Nodes: Python <-> AWS <-> Kafka <-> AI
+
+Hover to see project examples and GitHub links.
+
+Project Showcases
+
+AI-Powered Filter: Visitors describe needs ("Show me automation projects") → AI sorts your work.
+
+Live Demos: Embedded AWS-hosted prototypes (e.g., your payroll bot in an iframe).
+
+Dynamic Resume
+
+Contextual View: Toggle between "HR Manager" (emphasizes teamwork) and "CTO" (technical depth) resume modes.
+
+Achievement Heatmap: Calendar-style grid showing daily/weekly coding milestones.
+
+Design Specs
+Color Scheme
+
+Base: #0A0A0A (Dark void)
+
+Accents: #00F7FF (Cyber teal), #FF00FF (Neon magenta)
+
+Text: #FFFFFF with subtle glow
+
+Typography
+
+Headings: Space Mono (Terminal vibe)
+
+Body: Inter (Clean readability)
+
+Animations
+
+Floating Particles: Background with Particles.js
+
+Cyber Glitch Effect: On hover over project cards
+
+3D Model Viewer: Rotating NFT-style project thumbnails
+
+Tech Stack
+Component	Tools
+Frontend	Next.js 14 + TypeScript
+3D/Visuals	Three.js + React Three Fiber + WebGL
+AI Integration	OpenAI API (Custom GPT-4 assistant for Q&A)
+Styling	Tailwind CSS + Framer Motion
+Hosting	Vercel + AWS S3 (For heavy assets)
+Unique Sections
+/automation-lab
+
+Live Python code editor where visitors run your scripts (e.g., payroll_automator.py) in a sandbox.
+
+Shows real-time output with educational comments.
+
+/ai-mentor
+
+Chat interface letting users ask career/AI questions to your fine-tuned LLM.
+
+Responses pull from your blog posts and project docs.
+
+/neuro-timeline
+
+Vertical timeline with:
+
+Floating nodes for career milestones
+
+Zoom into any node to see photos/docs from that period.
+
+Step-by-Step Build Guide
+Clone Starter Template
+
+bash
+git clone https://github.com/pmndrs/react-three-next-starter  
+Add Terminal Component
+
+tsx
+// components/Terminal.tsx  
+import { useTerminal } from 'react-terminal-ui';  
+const commands = {  
+  'access projects': () => router.push('/projects'),  
+  'run payroll_demo': () => window.open('https://github.com/Evan620/payroll-automation')  
+};  
+Implement 3D Skill Graph
+
+jsx
+// components/SkillGraph.jsx  
+<Canvas>  
+  <OrbitControls autoRotate />  
+  <Nodes data={SKILL_DATA} /> {/* Custom Three.js component */}  
+</Canvas>  
+Add AI Greeter
+
+jsx
+// Integrate with OpenAI  
+const { messages, input, handleSubmit } = useChat({  
+  api: '/api/ai-greeter',  
+});  
+Inspiration & Assets
+Design References:
+
+Cyberpunk 2077 UI
+
+Three.js Portfolio Examples
+
+Free Resources:
+
+Cyber UI Kit
+
+Terminal Sound Effects
