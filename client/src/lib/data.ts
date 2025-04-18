@@ -189,8 +189,8 @@ export const executiveSummary = {
 
 // Default AI messages for the greeter
 export const defaultAIMessages = [
-  { role: "system", content: "AI assistant initialized." },
-  { role: "ai", content: "Welcome to Lazarus Portfolio. I'm your neural guide. To access the portfolio, please authenticate using terminal commands or explore the sections directly." }
+  { role: "system" as const, content: "AI assistant initialized." },
+  { role: "ai" as const, content: "Welcome to Lazarus Portfolio. I'm your neural guide. To access the portfolio, please authenticate using terminal commands or explore the sections directly." }
 ];
 
 // Terminal response helper

@@ -2,29 +2,36 @@ import { useState, useRef, useEffect } from "react";
 import { AIMessage } from "@/lib/types";
 import { defaultAIMessages, getAIResponse } from "@/lib/data";
 
+// Type assertion to ensure defaultAIMessages matches AIMessage[] type
+const typedDefaultMessages = defaultAIMessages as AIMessage[];
+
 interface AiGreeterProps {
   onNavigationRequest?: (section: string) => void;
 }
 
 const AiGreeter = ({ onNavigationRequest }: AiGreeterProps) => {
-  const [messages, setMessages] = useState<AIMessage[]>(defaultAIMessages);
+  const [messages, setMessages] = useState<AIMessage[]>(typedDefaultMessages);
   const [inputValue, setInputValue] = useState("");
   const [isTyping, setIsTyping] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   
-  // Scroll to bottom of messages when they change
+  // Scroll to bottom of messages when they change or during typing
   useEffect(() => {
     if (messagesEndRef.current) {
-      messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
+      // Use immediate scrolling during typing for better user experience
+      messagesEndRef.current.scrollIntoView({ 
+        behavior: isTyping ? "auto" : "smooth",
+        block: "end" 
+      });
     }
-  }, [messages]);
+  }, [messages, isTyping]);
   
   const handleSubmit = () => {
     if (!inputValue.trim() || isTyping) return;
     
     // Add user message
     const userQuery = inputValue.trim();
-    setMessages(prev => [...prev, { role: "user", content: userQuery }]);
+    setMessages(prev => [...prev, { role: "user" as const, content: userQuery }]);
     
     // Start AI typing
     setIsTyping(true);
@@ -52,7 +59,7 @@ const AiGreeter = ({ onNavigationRequest }: AiGreeterProps) => {
             );
             
             // Add the current typing AI message
-            return [...messagesWithoutTyping, { role: "ai", content: responseText }];
+            return [...messagesWithoutTyping, { role: "ai" as const, content: responseText }];
           });
           
           index++;
@@ -98,7 +105,7 @@ const AiGreeter = ({ onNavigationRequest }: AiGreeterProps) => {
           </div>
         </div>
         
-        <div className="text-sm mb-4 h-32 overflow-y-auto scrollbar-hide">
+        <div className="text-sm mb-4 h-40 overflow-y-auto scrollbar-hide">
           {messages.map((message, index) => (
             <p key={index} className="mb-2">
               <span className={message.role === "system" ? "text-cyber-teal" : message.role === "ai" ? "text-cyber-magenta" : "text-white"}>
