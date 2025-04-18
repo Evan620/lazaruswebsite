@@ -23,13 +23,13 @@ const AiGreeter = ({ onNavigationRequest }: AiGreeterProps) => {
     if (!inputValue.trim() || isTyping) return;
     
     // Add user message
-    setMessages(prev => [...prev, { role: "user", content: inputValue }]);
+    const userQuery = inputValue.trim();
+    setMessages(prev => [...prev, { role: "user", content: userQuery }]);
     
     // Start AI typing
     setIsTyping(true);
     
-    // Process and generate AI response
-    const userQuery = inputValue;
+    // Clear input field
     setInputValue("");
     
     // Simple timeout to simulate thinking/processing
@@ -43,11 +43,18 @@ const AiGreeter = ({ onNavigationRequest }: AiGreeterProps) => {
       const typingInterval = setInterval(() => {
         if (index < aiResponse.length) {
           responseText += aiResponse.charAt(index);
-          setMessages(prev => [
-            ...prev.slice(0, -1),
-            { role: "user", content: userQuery },
-            { role: "ai", content: responseText }
-          ]);
+          
+          // Update only the AI response message, not duplicating the user message
+          setMessages(prev => {
+            // Get all messages except the AI typing one (if it exists)
+            const messagesWithoutTyping = prev.filter(msg => 
+              !(msg.role === "ai" && msg.content.length < aiResponse.length && aiResponse.startsWith(msg.content))
+            );
+            
+            // Add the current typing AI message
+            return [...messagesWithoutTyping, { role: "ai", content: responseText }];
+          });
+          
           index++;
         } else {
           clearInterval(typingInterval);

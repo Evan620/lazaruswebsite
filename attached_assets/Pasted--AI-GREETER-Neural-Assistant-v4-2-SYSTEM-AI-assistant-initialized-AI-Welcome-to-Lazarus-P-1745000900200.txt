@@ -1,0 +1,527 @@
+
+AI GREETER
+Neural Assistant v4.2
+
+SYSTEM: AI assistant initialized.
+
+AI: Welcome to Lazarus Portfolio. I'm your neural guide. To access the portfolio, please authenticate using terminal commands or explore the sections directly.
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+USER: so what can you do
+
+AI: I'm a portfolio AI assistant for Lazarus. I can tell you about my projects, skills, or work experience. How can I help you today?
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+USER: who is lazarus
+
+AI: I'm a portfolio AI assistant for Lazarus. I can tell you about my projects, skills, or work experience. How can I help you today?

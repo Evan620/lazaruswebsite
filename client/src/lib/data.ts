@@ -227,6 +227,12 @@ export const getAIResponse = (message: string): string => {
   else if (normalizedMessage.includes("contact") || normalizedMessage.includes("hire")) {
     return "You can reach out via the contact form or connect directly on LinkedIn and GitHub. Would you like me to navigate to the contact section?";
   }
+  else if (normalizedMessage.includes("lazarus") || normalizedMessage.includes("you") || normalizedMessage.includes("who")) {
+    return "Lazarus is the code name for this portfolio's owner - a senior automation engineer specializing in AWS, Python development, and AI integration. The name symbolizes bringing legacy systems back to life through modern technology.";
+  }
+  else if (normalizedMessage.includes("do") || normalizedMessage.includes("help") || normalizedMessage.includes("can")) {
+    return "I can provide information about Lazarus's skills, projects, and work experience. I can also navigate you to different sections of the portfolio. Try asking about specific skills, project details, or how to get in contact.";
+  }
   else {
     return "I'm a portfolio AI assistant for Lazarus. I can tell you about my projects, skills, or work experience. How can I help you today?";
   }
