@@ -11,26 +11,26 @@ const socialLinks: SocialLink[] = [
   {
     icon: "fa-github",
     name: "GitHub",
-    url: "#",
-    username: "@Lazarus"
+    url: "https://github.com/Evan620",
+    username: "@Evan620"
   },
   {
     icon: "fa-linkedin",
     name: "LinkedIn",
-    url: "#",
-    username: "linkedin.com/in/lazarus-dev"
+    url: "https://www.linkedin.com/in/lazarus-magwaro-0067b333a/",
+    username: "Lazarus Magwaro"
   },
   {
-    icon: "fa-twitter",
-    name: "Twitter",
-    url: "#",
-    username: "@LazarusDev"
+    icon: "fa-phone",
+    name: "Phone",
+    url: "tel:+254707892164",
+    username: "+254 707 892 164"
   },
   {
     icon: "fa-envelope",
     name: "Email",
-    url: "mailto:contact@lazarus-dev.com",
-    username: "contact@lazarus-dev.com"
+    url: "mailto:lazarusgero1@gmail.com",
+    username: "lazarusgero1@gmail.com"
   }
 ];
 
@@ -49,7 +49,7 @@ const SocialLinks = () => {
             rel="noopener noreferrer"
           >
             <div className="w-12 h-12 rounded-full bg-cyber-magenta/20 flex items-center justify-center mr-4 text-cyber-magenta text-xl group-hover:bg-cyber-magenta/30">
-              <i className={`fab ${link.icon.startsWith('fa-envelope') ? 'fas' : 'fab'} ${link.icon}`}></i>
+              <i className={`${link.icon.startsWith('fa-envelope') || link.icon.startsWith('fa-phone') ? 'fas' : 'fab'} ${link.icon}`}></i>
             </div>
             <div>
               <h4 className="font-space text-cyber-magenta">{link.name}</h4>

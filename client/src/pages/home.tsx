@@ -231,7 +231,7 @@ const Home = () => {
                       <div className="text-cyber-teal text-5xl mb-4">
                         <i className="fas fa-map-marker-alt"></i>
                       </div>
-                      <p className="font-space text-xl text-cyber-teal">GRID: SAN FRANCISCO, CA</p>
+                      <p className="font-space text-xl text-cyber-teal">GRID: NAIROBI, KENYA</p>
                       <p className="text-gray-300 text-sm mt-2">Remote operations available globally</p>
                     </div>
                   </div>

@@ -31,8 +31,14 @@ const ContactForm = () => {
     setIsSubmitting(true);
     
     try {
-      // Simulate API call for sending email
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Create mailto link with form data
+      const subject = encodeURIComponent(`[Portfolio Contact] ${formData.subject}`);
+      const body = encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}\n\n--- Sent from Neural Interface Portfolio ---`
+      );
+      
+      // Open email client with prefilled email
+      window.location.href = `mailto:lazarusgero1@gmail.com?subject=${subject}&body=${body}`;
       
       // Success notification
       setSubmitSuccess(true);
@@ -50,8 +56,7 @@ const ContactForm = () => {
         setSubmitSuccess(false);
       }, 5000);
     } catch (error) {
-      console.error("Failed to send message:", error);
-      // Error handling would go here
+      console.error("Failed to open email client:", error);
     } finally {
       setIsSubmitting(false);
     }
@@ -64,7 +69,7 @@ const ContactForm = () => {
       {submitSuccess && (
         <div className="mb-6 bg-cyber-teal/10 border border-cyber-teal rounded-md p-4 text-cyber-teal">
           <i className="fas fa-check-circle mr-2"></i>
-          Message successfully transmitted. I'll respond as soon as possible.
+          Email client opened. Please send the message to complete transmission.
         </div>
       )}
       
