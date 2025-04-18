@@ -46,6 +46,38 @@
   body {
     @apply font-sans antialiased bg-cyber-dark text-foreground;
   }
+  
+  /* Animation keyframes for skill graph */
+  @keyframes pulse {
+    0% { opacity: 0.4; }
+    50% { opacity: 1; }
+    100% { opacity: 0.4; }
+  }
+  
+  @keyframes pulse-slow {
+    0% { opacity: 0.1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 0.1; }
+  }
+  
+  @keyframes pulse-fast {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+  }
+  
+  @keyframes rotate-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse-slow 3s infinite ease-in-out;
+  }
+  
+  .animate-pulse-fast {
+    animation: pulse-fast 1s infinite ease-in-out;
+  }
 }
 
 @layer components {
@@ -106,14 +138,7 @@
   100% { background-position: 200% 200%; }
 }
 
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.6; }
-}
-
-.animate-pulse {
-  animation: pulse 2s ease-in-out infinite;
-}
+/* Remove duplicate pulse animation - already defined above */
 
 .project-thumbnail {
   perspective: 800px;
