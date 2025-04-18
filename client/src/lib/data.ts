@@ -1,0 +1,233 @@
+import { Skill, SkillConnection, SkillCategory, Project, WorkExperience, SoftSkill, TechSkill, AchievementStat } from "./types";
+
+// 3D Skill Graph Data
+export const skills: Skill[] = [
+  { name: "Python", position: [0, 0, 0], color: "#00F7FF", size: 1.2 },
+  { name: "AWS", position: [-3, 2, -3], color: "#00F7FF", size: 1.1 },
+  { name: "Kafka", position: [3, -1, -2], color: "#00F7FF", size: 1 },
+  { name: "AI", position: [2, 2, 2], color: "#FF00FF", size: 1.2 },
+  { name: "React", position: [-2, -2, 1], color: "#00F7FF", size: 0.9 },
+  { name: "Docker", position: [-4, -1, -1], color: "#00F7FF", size: 0.9 },
+  { name: "Terraform", position: [-1, 3, -2], color: "#00F7FF", size: 0.8 },
+  { name: "ML", position: [4, 1, 3], color: "#FF00FF", size: 1 }
+];
+
+export const skillConnections: SkillConnection[] = [
+  { from: "Python", to: "AWS" },
+  { from: "Python", to: "Kafka" },
+  { from: "Python", to: "AI" },
+  { from: "AWS", to: "Terraform" },
+  { from: "AWS", to: "Docker" },
+  { from: "AI", to: "ML" },
+  { from: "Kafka", to: "AWS" },
+  { from: "React", to: "Python" }
+];
+
+// Skill Categories
+export const skillCategories: SkillCategory[] = [
+  {
+    icon: "fa-code",
+    title: "Development",
+    color: "teal",
+    skills: [
+      "Python (Advanced)",
+      "TypeScript/JavaScript",
+      "React & Next.js",
+      "SQL & NoSQL Databases"
+    ]
+  },
+  {
+    icon: "fa-cloud",
+    title: "Infrastructure",
+    color: "magenta",
+    skills: [
+      "AWS Certified Solutions Architect",
+      "Terraform & CloudFormation",
+      "Docker & Kubernetes",
+      "CI/CD Pipelines"
+    ]
+  },
+  {
+    icon: "fa-robot",
+    title: "AI & Automation",
+    color: "teal",
+    skills: [
+      "Machine Learning (TensorFlow/PyTorch)",
+      "OpenAI API Integration",
+      "Process Automation (RPA)",
+      "Data Pipelines (Kafka, Airflow)"
+    ]
+  }
+];
+
+// Projects
+export const projects: Project[] = [
+  {
+    id: "payroll",
+    title: "Payroll Automation System",
+    description: "Automated payroll processing system that extracts data from multiple sources, validates information, and generates reports.",
+    categories: ["automation", "python"],
+    year: "2023",
+    image: "/payroll-automation.jpg",
+    techStack: ["Python, Pandas, PyPDF2", "AWS Lambda, S3", "Custom ETL Pipeline"],
+    githubUrl: "#",
+    demoUrl: "#"
+  },
+  {
+    id: "ai_analyzer",
+    title: "AI Content Analyzer",
+    description: "Content analysis tool that leverages GPT-4 to evaluate, summarize, and generate insights from large document collections.",
+    categories: ["ai", "nlp"],
+    year: "2023",
+    image: "/ai-analyzer.jpg",
+    techStack: ["OpenAI GPT-4 API", "Next.js, React", "Vector Database (Pinecone)"],
+    githubUrl: "#",
+    demoUrl: "#"
+  },
+  {
+    id: "cloud_infra",
+    title: "Cloud Infrastructure Automation",
+    description: "Infrastructure as Code framework for deploying scalable, self-healing cloud architectures with integrated monitoring.",
+    categories: ["cloud", "devops"],
+    year: "2022",
+    image: "/cloud-infra.jpg",
+    techStack: ["Terraform, AWS CDK", "AWS (ECS, Lambda, SQS)", "Python, NodeJS"],
+    githubUrl: "#",
+    demoUrl: "#"
+  }
+];
+
+// Resume Data
+export const workExperience: WorkExperience[] = [
+  {
+    title: "Senior Automation Engineer",
+    company: "TechCorp Industries",
+    period: "2020 - Present",
+    level: "current",
+    achievements: {
+      hr: [
+        "Led cross-functional team of 6 developers to implement company-wide process automation, reducing manual tasks by 73%",
+        "Conducted bi-weekly knowledge sharing sessions, resulting in improved team skill diversity",
+        "Established mentorship program for junior engineers with 90% retention rate",
+        "Collaborated with HR to define technical career paths and skill matrices"
+      ],
+      cto: [
+        "Architected event-driven ETL pipeline processing 500M+ daily records using Kafka, AWS Lambda and S3",
+        "Implemented infrastructure-as-code practices with 99.9% environment consistency across deployments",
+        "Engineered ML model deployment pipeline reducing time-to-production from weeks to hours",
+        "Optimized processing costs by 65% through serverless architecture and intelligent scaling"
+      ]
+    }
+  },
+  {
+    title: "Automation Developer",
+    company: "Innovate Solutions",
+    period: "2017 - 2020",
+    level: "past",
+    achievements: {
+      hr: [
+        "Facilitated successful migration of 15+ legacy systems to modern cloud infrastructure",
+        "Improved team velocity by 35% through implementation of agile methodologies",
+        "Organized quarterly hackathons to foster innovation and team building",
+        "Recognized with 'Collaboration Champion' award for cross-department initiatives"
+      ],
+      cto: [
+        "Designed multi-region AWS architecture with 99.99% uptime SLA utilizing Route53, CloudFront and ECS",
+        "Developed custom CI/CD pipeline with automated security scanning and canary deployments",
+        "Created Python framework for RPA processes with pluggable modules and 85% code reuse",
+        "Implemented OAuth2 and OIDC authentication layer with role-based access control"
+      ]
+    }
+  }
+];
+
+export const softSkills: SoftSkill[] = [
+  { name: "Team Leadership", icon: "fa-users" },
+  { name: "Communication", icon: "fa-comments" },
+  { name: "Project Management", icon: "fa-tasks" },
+  { name: "Problem Solving", icon: "fa-lightbulb" }
+];
+
+export const techSkills: TechSkill[] = [
+  {
+    category: "Languages & Frameworks",
+    skills: ["Python (Advanced)", "JavaScript/TypeScript", "SQL", "React", "Flask", "FastAPI"]
+  },
+  {
+    category: "Infrastructure & DevOps",
+    skills: ["AWS", "Terraform", "Docker", "Kubernetes", "CI/CD", "Git"]
+  },
+  {
+    category: "Data & AI",
+    skills: ["Kafka", "Pandas", "TensorFlow", "OpenAI API", "PostgreSQL", "MongoDB"]
+  },
+  {
+    category: "Architecture",
+    skills: ["Microservices", "Event-Driven", "Serverless", "API Design", "Multi-region", "High Availability"]
+  }
+];
+
+export const achievementStats: AchievementStat[] = [
+  { value: "1,240+", label: "GitHub Contributions" },
+  { value: "85+", label: "Projects Completed" },
+  { value: "15+", label: "Technical Articles" }
+];
+
+export const executiveSummary = {
+  stats: [
+    { value: "73%", label: "Operational Efficiency Gain", description: "Implemented enterprise-wide process automation reducing manual workload and operational costs." },
+    { value: "65%", label: "Cost Reduction", description: "Optimized cloud infrastructure and processing pipelines resulting in significant monthly savings." },
+    { value: "99.9%", label: "System Reliability", description: "Designed resilient architectures with self-healing capabilities and proactive monitoring." },
+    { value: "4x", label: "Development Velocity", description: "Accelerated time-to-market through optimized CI/CD pipelines and reusable components." }
+  ],
+  leadership: [
+    { icon: "fa-lightbulb", title: "Innovation Driver", description: "Introduced emerging technologies generating new revenue streams" },
+    { icon: "fa-chart-line", title: "Strategic Planner", description: "Developed 3-year technology roadmap aligned with business growth" },
+    { icon: "fa-users-cog", title: "Team Builder", description: "Assembled high-performing teams with 90% retention rate" }
+  ]
+};
+
+// Default AI messages for the greeter
+export const defaultAIMessages = [
+  { role: "system", content: "AI assistant initialized." },
+  { role: "ai", content: "Welcome to Lazarus Portfolio. I'm your neural guide. To access the portfolio, please authenticate using terminal commands or explore the sections directly." }
+];
+
+// Terminal response helper
+export const getTerminalResponse = (command: string): string => {
+  const normalizedCommand = command.toLowerCase().trim();
+  
+  if (normalizedCommand.includes("access") && normalizedCommand.includes("portfolio")) {
+    return "Access granted. Portfolio system loaded.";
+  } 
+  else if (normalizedCommand.includes("help")) {
+    return "Available commands: access, help, projects, skills, contact";
+  }
+  else if (normalizedCommand.includes("projects")) {
+    return "Navigating to projects section...";
+  }
+  else if (normalizedCommand.includes("skills")) {
+    return "Navigating to skills matrix...";
+  }
+  else {
+    return `Command not recognized: "${command}"`;
+  }
+};
+
+// AI response helper 
+export const getAIResponse = (message: string): string => {
+  const normalizedMessage = message.toLowerCase().trim();
+  
+  if (normalizedMessage.includes("project") || normalizedMessage.includes("work")) {
+    return "I've created various automation projects including an ETL pipeline processing 500M+ daily records. Would you like to see the projects section?";
+  } 
+  else if (normalizedMessage.includes("skill") || normalizedMessage.includes("technology")) {
+    return "My core skills include Python, AWS, AI integration, and data pipeline engineering. The 3D skill web shows how these connect.";
+  }
+  else if (normalizedMessage.includes("contact") || normalizedMessage.includes("hire")) {
+    return "You can reach out via the contact form or connect directly on LinkedIn and GitHub. Would you like me to navigate to the contact section?";
+  }
+  else {
+    return "I'm a portfolio AI assistant for Lazarus. I can tell you about my projects, skills, or work experience. How can I help you today?";
+  }
+};

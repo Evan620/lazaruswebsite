@@ -1,0 +1,141 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    
+    --primary: 180 100% 50%;
+    --primary-foreground: 0 0% 98%;
+    
+    --secondary: 300 100% 50%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 180 100% 50%;
+    
+    --radius: 0.5rem;
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply font-sans antialiased bg-cyber-dark text-foreground;
+  }
+}
+
+@layer components {
+  .terminal-text {
+    @apply font-space text-cyber-teal;
+  }
+  
+  .glow {
+    text-shadow: 0 0 8px rgba(0, 247, 255, 0.6);
+  }
+  
+  .magenta-glow {
+    text-shadow: 0 0 8px rgba(255, 0, 255, 0.6);
+  }
+  
+  .terminal-cursor {
+    @apply inline-block w-2.5 h-6 bg-cyber-teal ml-0.5 animate-terminal-cursor;
+  }
+  
+  .cyber-card {
+    @apply bg-gradient-to-br from-[rgba(10,10,10,0.8)] to-[rgba(30,30,30,0.8)] border border-cyber-teal/30 shadow-[0_0_15px_rgba(0,247,255,0.2)] transition-all duration-300;
+  }
+  
+  .cyber-card:hover {
+    @apply border-cyber-magenta/60 shadow-[0_0_20px_rgba(255,0,255,0.3)] -translate-y-1;
+  }
+  
+  .cyber-card:hover .cyber-glitch {
+    @apply animate-glitch;
+  }
+  
+  .hologram:before {
+    content: "";
+    @apply absolute inset-0 bg-gradient-to-br from-transparent via-cyber-teal/20 to-transparent bg-[length:200%_200%] animate-hologram;
+  }
+}
+
+@keyframes terminal-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glitch {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(5px); }
+  40% { transform: translateX(-5px); }
+  60% { transform: translateX(3px); }
+  80% { transform: translateX(-3px); }
+}
+
+@keyframes hologram {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 200% 200%; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.animate-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.project-thumbnail {
+  perspective: 800px;
+}
+
+.project-thumbnail-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.project-thumbnail:hover .project-thumbnail-inner {
+  transform: rotateY(180deg);
+}
+
+.project-front, .project-back {
+  backface-visibility: hidden;
+}
+
+.project-back {
+  transform: rotateY(180deg);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
