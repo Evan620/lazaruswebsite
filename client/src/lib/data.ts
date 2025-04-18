@@ -68,7 +68,7 @@ export const projects: Project[] = [
     description: "A next-generation asset tokenization platform that enables businesses to tokenize, manage, and trade real-world assets (e.g., real estate, invoices, equipment) on public blockchains like Ethereum and Polygon.",
     categories: ["blockchain", "fintech", "web3"],
     year: "2023",
-    image: "/orion-token.jpg", // Placeholder - you'll add the actual image
+    image: "orion-token.jpg",
     techStack: ["Ethereum/Solidity", "Next.js", "Polygon", "Smart Contracts"],
     githubUrl: "https://github.com/Evan620/OrionToken",
     demoUrl: "#"
@@ -79,7 +79,7 @@ export const projects: Project[] = [
     description: "A modern, AI-powered website for Orion, a Nairobi-based technology consultancy, showcasing services, portfolio projects, and featuring an intelligent OpenAI-driven chatbot for client interactions.",
     categories: ["web", "ai", "consultancy"],
     year: "2023",
-    image: "/oriontech.jpg", // Placeholder - you'll add the actual image
+    image: "oriontech.jpg",
     techStack: ["React", "OpenAI API", "TailwindCSS", "Node.js"],
     githubUrl: "https://github.com/Evan620/oriontech.co.ke",
     demoUrl: "https://oriontech.co.ke"
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     description: "A real estate automation platform combining AI-driven analytics, lead management, document generation, and customizable workflow automation to streamline property operations and market intelligence.",
     categories: ["real-estate", "ai", "automation"],
     year: "2023",
-    image: "/rezguru.jpg", // Placeholder - you'll add the actual image
+    image: "rezguru.jpg",
     techStack: ["Python", "ML/Analytics", "Document AI", "Cloud Infrastructure"],
     githubUrl: "https://github.com/Evan620/RezGuruAI",
     demoUrl: "#"
@@ -101,7 +101,7 @@ export const projects: Project[] = [
     description: "An AI-powered job application assistant that optimizes resumes, matches you to relevant openings, tracks applications, and analyzes skill gaps—integrating OAuth sign-ins with GitHub or LinkedIn.",
     categories: ["career", "ai", "productivity"],
     year: "2023",
-    image: "/job-genius.jpg", // Placeholder - you'll add the actual image
+    image: "job-genius.jpg",
     techStack: ["React", "OpenAI API", "OAuth", "Node.js/Express"],
     githubUrl: "https://github.com/Evan620/JobGeniusAI",
     demoUrl: "#"
